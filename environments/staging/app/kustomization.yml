@@ -1,0 +1,7 @@
+---
+namespace: app
+replicas:
+  - name: app
+    count: 3
+resources:
+  - ../../../app-base
