@@ -16,6 +16,12 @@ spec:
     spec:
       containers:
         - name: app
+          resources:
+            limits:
+              memory: 128Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
           imagePullPolicy: Always
           image: 039454511521.dkr.ecr.us-east-1.amazonaws.com/app:v0.0.0
           ports:
